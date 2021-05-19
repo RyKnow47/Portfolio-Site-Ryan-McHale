@@ -82,6 +82,23 @@ a:active { /* selected link */
   background-color: #ff7f50;
   color: #994c30;
 }
+footer {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.social svg {
+  width: 50px;
+  height: auto;
+}
+
 /*font Placeholder*/
 
 /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
