@@ -1,27 +1,54 @@
 body {
-  background-color: lightgrey;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  font-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  background-color: #121212;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  font-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #f0f0f2;
+}
+
+header {
+  background-color: #121212;
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.logo svg {
+  width: 50px;
+  height: auto;
+}
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -32,37 +59,49 @@ img {
 }
 
 a {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  color: deepskyblue;
+  text-decoration: none;
+  /* No underlining */
+}
 }
 
-}
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
+
 a:hover,
 a:focus {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: rosybrown;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: royalblue;
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid royalblue;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.2;
   text-decoration: none;
@@ -70,44 +109,49 @@ a:active { /* selected link */
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: snow;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid royalblue;
 }
+
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
+  background-color: snow;
+  color: purple;
+  border: 2px solid purple;
 }
+
 .button.contact:active {
-  background-color: #ff7f50;
-  color: #994c30;
+  background-color: lightcyan;
+  color: lightcyan;
 }
+
 footer {
   text-align: center;
-  background-color: lightgrey;
+  background-color: #121212;
   padding: 10px;
 }
+
 .social {
   text-align: center;
 }
+
 .social a {
   display: inline-block;
   margin: 0 5px;
 }
+
 .social svg {
   width: 50px;
   height: auto;
 }
 
 /*font Placeholder*/
-
 /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
 font-style: italic; (italicizes a font, though make sure you selected it in Google fonts, as well)
 font-variant: small-caps; (transforms all lowercase letters into small caps—uppercase letters set at the same height as their surrounding lowercase letters)
 text-transform: uppercase; (transforms all letters to uppercase so that you don’t need to write all uppercase in your HTML)
 text-decoration: underline;  (underlines a piece of text)
 */
-
 /*
 colors used;
 Primary Color (Blue): #05676e;
