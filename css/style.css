@@ -11,9 +11,10 @@ body {
 }
 
 header {
-  background-color: #121212;
+  background-color: indianred;
   padding: 10px;
-}
+  margin: 10px;
+  }
 
 .logo {
   text-align: center;
@@ -59,7 +60,7 @@ img {
 }
 
 a {
-  color: deepskyblue;
+  color: ghostwhite;
   text-decoration: none;
   /* No underlining */
 }
