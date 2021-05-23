@@ -1,3 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right*/
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid indianred; }
+
 body {
   background-color: #121212;
   font-family: 'Inter', sans-serif;
@@ -12,13 +33,50 @@ body {
 
 header {
   background-color: indianred;
+  text-align: center;
   padding: 10px;
   margin: 10px;
   }
 
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+nav > ul > li {
+  display: inline-block;
+  }
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f0f0f2;
+}
+
+nav > ul > li > a:visited {
+  /* visited link */
+  color: ghostwhite;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: gold;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+nav > ul > li > a:active {
+  /* selected link */
+  color: gold;
+}
+
+
 .logo {
   text-align: center;
-}
+  max-width: 250px;
+
+  }
 
 .logo a {
   display: inline-block;
@@ -29,15 +87,16 @@ header {
   width: 50px;
   height: auto;
 }
-}
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
-h1 {
+#hero h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -68,19 +127,19 @@ a {
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: ghostwhite;
 }
 
 a:hover,
 a:focus {
-  color: rosybrown;
+  color: gold;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: gold;
 }
 
 .button {
