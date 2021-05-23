@@ -71,6 +71,14 @@ nav > ul > li > a:active {
   color: gold;
 }
 
+#hero {
+  background-color: indianred;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
 
 .logo {
   text-align: center;
