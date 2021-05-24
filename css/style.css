@@ -32,11 +32,17 @@ body {
 }
 
 header {
-  background-color: indianred;
+background-color: indianred;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   margin: 10px;
-  }
+  width: 100%;
+  border-bottom: 3px solid indianred;
+}
+
+/*main {
+  padding-top: 133px;
+} */
 
   nav > ul {
     list-style-type: none;
@@ -73,7 +79,7 @@ nav > ul > li > a:active {
 
 #hero {
   background-color: indianred;
-  padding: 20px 0;
+  margin: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -131,7 +137,7 @@ a {
   text-decoration: none;
   /* No underlining */
 }
-}
+
 
 a:visited {
   /* visited link */
