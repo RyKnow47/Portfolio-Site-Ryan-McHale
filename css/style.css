@@ -1,23 +1,25 @@
 * {
   box-sizing: border-box;
 }
-/* Layout Styling */
 
+/* Layout Styling */
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right*/
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right*/
 }
 
 .center {
   text-align: center;
 }
 
-
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid indianred; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid indianred;
+}
 
 body {
   background-color: #121212;
@@ -26,71 +28,70 @@ body {
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
-  font-height: 1.6;
+  line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #f0f0f2;
 }
 
 header {
-background-color: indianred;
+  background-color: indianred;
   text-align: center;
   padding: 10px 0;
-  margin: 10px;
   width: 100%;
   border-bottom: 3px solid indianred;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
 }
 
-/*main {
-  padding-top: 133px;
-} */
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
-  }
+}
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #f0f0f2;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   /* visited link */
   color: ghostwhite;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
   color: gold;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   /* selected link */
   color: gold;
 }
 
 #hero {
   background-color: indianred;
-  margin: 20px 0;
+  margin: 0px 0 20px;
   display: inline-block;
   width: 100%;
 }
 
-
-
 .logo {
   text-align: center;
-  max-width: 250px;
+}
 
-  }
+.logo img {
+  max-width: 250px;
+}
 
 .logo a {
   display: inline-block;
@@ -101,7 +102,6 @@ nav > ul > li > a:active {
   width: 50px;
   height: auto;
 }
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -137,7 +137,6 @@ a {
   text-decoration: none;
   /* No underlining */
 }
-
 
 a:visited {
   /* visited link */
@@ -219,6 +218,7 @@ footer {
   height: auto;
 }
 
+/*about section*/
 /*font Placeholder*/
 /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
 font-style: italic; (italicizes a font, though make sure you selected it in Google fonts, as well)
