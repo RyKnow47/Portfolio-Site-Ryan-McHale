@@ -170,7 +170,11 @@ a:active {
 }
 
 .button:hover {
+background-color: ghostwhite;
+color: indianred;
+border: 2px solid indianred;
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -180,29 +184,32 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact {
-  background-color: transparent;
-  color: snow;
-  text-transform: uppercase;
-  border: 2px solid royalblue;
-}
 
-.button.contact:hover {
-  background-color: snow;
-  color: purple;
-  border: 2px solid purple;
-}
-
-.button.contact:active {
-  background-color: lightcyan;
-  color: lightcyan;
-}
 
 footer {
   text-align: center;
   background-color: #121212;
   padding: 10px;
 }
+
+.button.contact {
+  background-color: transparent;
+  color: ghostwhite;
+  text-transform: uppercase;
+  border: 2px solid indianred;
+}
+
+.button.contact:hover {
+  background-color: indianred;
+  color: ghostwhite;
+  border: 2px solid indianred;
+}
+
+.button.contact:active {
+  background-color: indianred;
+  color: ghostwhite;
+}
+
 
 .social {
   text-align: center;
