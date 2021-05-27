@@ -1,32 +1,5 @@
 * {
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* Layout Styling */
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right*/
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.center {
-  text-align: center;
-}
-
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid indianred;
 }
 
 body {
@@ -53,6 +26,7 @@ header {
   position: relative;
 }
 
+/* ::::::::::::::::::::::::::::::::::: NAVIGATION */
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -92,8 +66,9 @@ nav>ul>li>a:active {
   display: inline-block;
   width: 100%;
   text-align: center;
- }
+}
 
+/* ::::::::::::::::::::::::::::::::::: LOGO */
 .logo {
   text-align: center;
 }
@@ -112,8 +87,11 @@ nav>ul>li>a:active {
   height: auto;
 }
 
+/* ::::::::::::::::::::::::::::::::::: TYPOGRAPHY */
 h1, h2, h3, h4 {
   line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #hero h1 {
@@ -141,17 +119,16 @@ img {
   width: 100%;
 }
 
+/* ::::::::::::::::::::::::::::::::::: LINKS */
 a {
   color: ghostwhite;
   text-decoration: none;
   /* No underlining */
 }
 
-a:visited {
-  /* visited link */
-  color: ghostwhite;
-}
-
+/*a:visited {
+color: ghostwhite;
+} */
 a:hover,
 a:focus {
   color: gold;
@@ -164,6 +141,7 @@ a:active {
   color: gold;
 }
 
+/* :::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -175,18 +153,21 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid indianred;
   /* width of the border, type, color */
-  transition: 0.2s; /*opacity;*/
+  transition: 0.2s opacity;
 }
 
-
 .button:hover {
-background-color: indianred;
-color: ghostwhite;
-/*border: 2px solid indianred;*/
+  background-color: indianred;
+  color: ghostwhite;
+  /*border: 2px solid indianred;*/
   opacity: 0.8;
-
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button:visited {
+  background-color: ghostwhite;
+  color: indianred;
 }
 
 .button:active {
@@ -194,7 +175,34 @@ color: ghostwhite;
   text-decoration: none;
 }
 
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
 
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right*/
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  text-align: center;
+}
+
+.workpad {
+  padding-top: 11px;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid indianred;
+}
 
 footer {
   text-align: center;
@@ -220,7 +228,6 @@ footer {
   color: ghostwhite;
 }
 
-
 .social {
   text-align: center;
 }
@@ -237,56 +244,269 @@ footer {
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-
-main {
-  padding-top: 99px;
-}
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-#hero span {
-  display: block;
-}
-
-body {
-font-size: 18px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  header div:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
+
+  [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  [class*="col-"]:last-child {
+    padding-right: 0;
+  }
+}
 
 /* Large devices (1024px or larger) */
-@media only screen and (min-width: 1024) {
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  header div:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
+
+  [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  [class*="col-"]:last-child {
+    padding-right: 0;
+  }
 }
+
+/* X-Large devices (1440px or larger) */
+@media only screen and (min-width: 1440px) {}
+
+/* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
+.button.resume {
+  background-color: indianred;
+  color: ghostwhite;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid indianred;
+}
+
+/*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
+.sample {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  /* X-Large devices (1440px or larger) */
-  @media only screen and (min-width: 1440px) {
-
+  50% {
+    fill: #fcffad;
   }
 
+  100% {
+    fill: #f76414;
+  }
+}
 
-/*about section*/
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /*font Placeholder*/
 /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
 font-style: italic; (italicizes a font, though make sure you selected it in Google fonts, as well)
