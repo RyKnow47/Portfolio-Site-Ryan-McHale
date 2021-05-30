@@ -214,6 +214,11 @@ a:active {
   border-bottom: 1px solid indianred;
 }
 
+.row.divider {
+  padding-bottom: 25px;
+  border-bottom: 1px solid indianred;
+}
+
 footer {
   text-align: center;
   background-color: #121212;
