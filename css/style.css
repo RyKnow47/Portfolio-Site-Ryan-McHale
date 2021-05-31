@@ -185,7 +185,7 @@ a:active {
   text-decoration: none;
 }
 
-/* Layout Styling */
+/* :::::::::::::::::::::::::::::::::::::::::::: LAYOUT STYLING */
 .container {
   padding: 0 15px;
 }
@@ -258,11 +258,20 @@ footer {
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: MISC*/
-
 .title {
   text-align: center;
 }
 
+.ryknow {
+  text-align: center;
+}
+
+.ryknow img {
+  width: 1000px;
+  height: auto;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE DESIGN */
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   header {
