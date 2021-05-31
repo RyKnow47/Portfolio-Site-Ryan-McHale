@@ -257,6 +257,12 @@ footer {
   height: auto;
 }
 
+/* :::::::::::::::::::::::::::::::::::::::::::: MISC*/
+
+.title {
+  text-align: center;
+}
+
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   header {
