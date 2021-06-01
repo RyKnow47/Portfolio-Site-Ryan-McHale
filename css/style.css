@@ -87,10 +87,6 @@ nav>ul>li>a.active {
   margin: 0 5px;
 }
 
-.logo svg {
-  width: 50px;
-  height: auto;
-}
 
 /* ::::::::::::::::::::::::::::::::::: TYPOGRAPHY */
 h1, h2, h3, h4 {
@@ -116,8 +112,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 400;
+  color: gold;
 }
 
 img {
@@ -255,6 +252,10 @@ footer {
 .social img {
   width: 40px;
   height: auto;
+}
+
+.copyright {
+  color: gold;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: MISC*/
