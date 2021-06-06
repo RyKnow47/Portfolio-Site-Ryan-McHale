@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
 body {
   background-color: #121212;
@@ -13,7 +14,6 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #f0f0f2;
 }
-
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
@@ -28,8 +28,6 @@ header {
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: NAVIGATION */
-
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -68,9 +66,11 @@ nav>ul>li>a.active {
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -82,13 +82,19 @@ nav>ul>li>a.active {
   font-size: 20px;
   padding-right: 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.menuIcon:focus {
+  color: ghostwhite;
 }
 
 #hero {
@@ -103,7 +109,6 @@ nav>ul>li>a.active {
 /*.logo {
   float: left;
 }*/
-
 .logo img {
   max-width: 100px;
 }
@@ -308,27 +313,28 @@ footer {
   nav>ul>li {
     display: inline-block;
   }
-nav>ul {
-  margin: 1em 0;
-}
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   /*.logo {
     float: left;
   }*/
-
   .logo img {
     min-width: 150px;
   }
