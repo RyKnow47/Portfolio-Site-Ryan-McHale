@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
 body {
   background-color: #121212;
   font-family: 'Inter', sans-serif;
@@ -14,10 +14,11 @@ body {
   color: #f0f0f2;
 }
 
+
+/* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
   background-color: indianred;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   width: 100%;
   border-bottom: 3px solid indianred;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
@@ -26,14 +27,13 @@ header {
   position: relative;
 }
 
-/* ::::::::::::::::::::::::::::::::::: NAVIGATION */
+/* :::::::::::::::::::::::::::::::::::::::::::::: NAVIGATION */
+
+
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -65,6 +65,32 @@ nav>ul>li>a.active {
   color: gold;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
 #hero {
   background-color: indianred;
   margin: 0px 0 20px;
@@ -73,13 +99,13 @@ nav>ul>li>a.active {
   text-align: center;
 }
 
-/* ::::::::::::::::::::::::::::::::::: LOGO */
-.logo {
-  text-align: center;
-}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: LOGO */
+/*.logo {
+  float: left;
+}*/
 
 .logo img {
-  max-width: 250px;
+  max-width: 100px;
 }
 
 .logo a {
@@ -87,8 +113,7 @@ nav>ul>li>a.active {
   margin: 0 5px;
 }
 
-
-/* ::::::::::::::::::::::::::::::::::: TYPOGRAPHY */
+/* :::::::::::::::::::::::::::::::::::::::::::: TYPOGRAPHY */
 h1, h2, h3, h4 {
   line-height: 1.4;
   margin-top: 0;
@@ -121,7 +146,7 @@ img {
   width: 100%;
 }
 
-/* ::::::::::::::::::::::::::::::::::: LINKS */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::: LINKS */
 a {
   color: ghostwhite;
   text-decoration: none;
@@ -143,7 +168,7 @@ a:active {
   color: gold;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
+/* ::::::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -258,7 +283,7 @@ footer {
   color: gold;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::: MISC*/
+/* ::::::::::::::::::::::::::::::::::::::::::::::::: MISC*/
 .title {
   text-align: center;
 }
@@ -272,26 +297,40 @@ footer {
   height: auto;
 }
 
-/* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE DESIGN */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE DESIGN */
 /* Medium devices (640px and larger) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+nav>ul {
+  margin: 1em 0;
+}
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-  .logo {
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+  /*.logo {
     float: left;
-  }
+  }*/
 
   .logo img {
-    width: 150px;
+    min-width: 150px;
   }
 
   header div:after {
@@ -476,76 +515,81 @@ footer {
 /* X-Large devices (1440px or larger) */
 @media only screen and (min-width: 1440px) {}
 
-/* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
-.button.resume {
-  background-color: indianred;
-  color: ghostwhite;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid indianred;
-}
-
-/*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
-.sample {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+@media only screen and (min-width: 641px) {
+  .logo {
+    max-width: 250px;
   }
 
-  50% {
-    fill: #fcffad;
+  /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
+  .button.resume {
+    background-color: indianred;
+    color: ghostwhite;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid indianred;
   }
 
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
+  /*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
+  .sample {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
-  to {
-    transform: translate(200px, 50px);
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    100% {
+      fill: #f76414;
+    }
   }
-}
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
+  .sun {
+    animation: 4s color-change infinite alternate linear;
   }
 
-  to {
-    transform: translate(100px, 48px);
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
   }
-}
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
 
-/*font Placeholder*/
-/*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  /*font Placeholder*/
+  /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
 font-style: italic; (italicizes a font, though make sure you selected it in Google fonts, as well)
 font-variant: small-caps; (transforms all lowercase letters into small caps—uppercase letters set at the same height as their surrounding lowercase letters)
 text-transform: uppercase; (transforms all letters to uppercase so that you don’t need to write all uppercase in your HTML)
 text-decoration: underline;  (underlines a piece of text)
 */
-/*
+  /*
 colors used;
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #0489c79;
