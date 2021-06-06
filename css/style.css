@@ -98,7 +98,7 @@ nav>ul>li>a.active {
 
 #hero {
   background-color: indianred;
-  margin: 0px 0 20px;
+  margin: 0 0 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -109,7 +109,8 @@ nav>ul>li>a.active {
   float: left;
 }*/
 .logo img {
-  max-width: 100px;
+  max-width: 75px;
+  margin: 5px 0;
 }
 
 .logo a {
@@ -306,7 +307,7 @@ footer {
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+   padding: 20px 0 13px;
   }
 
   nav>ul>li {
