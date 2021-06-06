@@ -75,7 +75,7 @@ nav>ul>li>a.active {
   position: relative;
 }
 
-.navtoggle li .icon {
+.navtoggle li .menuIcon {
   position: absolute;
   right: 0;
   top: 20px;
@@ -92,7 +92,6 @@ nav>ul>li>a.active {
   padding: 10px 0;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
-
 .menuIcon:focus {
   color: ghostwhite;
 }
