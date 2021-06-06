@@ -9,24 +9,27 @@
   <title>Ryan McHale - UI Designer Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/2a7c91b7c5.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logowhite.png" alt="Ryan McHale">
-        </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logowhite.png" alt="Ryan McHale"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact"onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <main>
@@ -127,9 +130,8 @@
     </div>
   </footer>
   <!-- :::::::::::::::::::::::::::::::::::::::::::::: JAVASCRIPT:::::: -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-
-
 
 </body>
 
