@@ -1,9 +1,8 @@
-/*<button onclick='javascript:alert("You really clicked me!")'>
-  Click me!
-</button>
-
-<script>
-  alert("Hi, thanks for visiting my portfolio!");
-</script>*/
-
-console.log("Hi, Thanks for visiting My Portfolio Site!")
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
