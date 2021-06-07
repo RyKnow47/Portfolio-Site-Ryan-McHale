@@ -300,7 +300,7 @@ footer {
 }
 
 .ryknow img {
-  width: 1000px;
+  max-width: 1000px;
   height: auto;
 }
 
@@ -312,6 +312,10 @@ footer {
     padding: 20px 0 13px;
   }
 
+  /*@media only screen and (min-width: 641px) {
+    .logo {
+      max-width: 250px;
+    }*/
   nav>ul>li {
     display: inline-block;
   }
@@ -339,9 +343,9 @@ footer {
     border-top: none;
   }
 
-  /*.logo {
+  .logo {
     float: left;
-  }*/
+  }
   .logo img {
     min-width: 150px;
   }
@@ -532,81 +536,81 @@ footer {
 /* X-Large devices (1440px or larger) */
 @media only screen and (min-width: 1440px) {}
 
-@media only screen and (min-width: 641px) {
-  .logo {
-    max-width: 250px;
+/* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
+.button.resume {
+  background-color: indianred;
+  color: ghostwhite;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid indianred;
+}
+
+.story {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
+.sample {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
-  .button.resume {
-    background-color: indianred;
-    color: ghostwhite;
-    text-align: center;
-    text-transform: uppercase;
-    border: 2px solid indianred;
+  50% {
+    fill: #fcffad;
   }
 
-  /*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
-  .sample {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
 
-    50% {
-      fill: #fcffad;
-    }
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
 
-    100% {
-      fill: #f76414;
-    }
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
 
-  .sun {
-    animation: 4s color-change infinite alternate linear;
+  to {
+    transform: translate(100px, 48px);
   }
+}
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
-  /*font Placeholder*/
-  /*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
+/*font Placeholder*/
+/*font-weight: bold; (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
 font-style: italic; (italicizes a font, though make sure you selected it in Google fonts, as well)
 font-variant: small-caps; (transforms all lowercase letters into small caps—uppercase letters set at the same height as their surrounding lowercase letters)
 text-transform: uppercase; (transforms all letters to uppercase so that you don’t need to write all uppercase in your HTML)
 text-decoration: underline;  (underlines a piece of text)
 */
-  /*
+/*
 colors used;
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #0489c79;
