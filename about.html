@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryan McHale | Information</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Ryan McHale - UI Designer Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/2a7c91b7c5.js" crossorigin="anonymous"></script>
@@ -13,19 +15,20 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logowhite.png" alt="Ryan McHale">
-        </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logowhite.png" alt="Ryan McHale"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menuIcon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="#contact-a">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <main>
@@ -141,7 +144,7 @@
       <!--Close green row-->
     </div>
     <!--Close Yellow-->
-<div class="row divider"></div>
+    <div class="row divider"></div>
     <!--Close Orange Section 2-->
   </main>
   <footer id="contact">
