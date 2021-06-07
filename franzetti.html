@@ -16,30 +16,32 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logowhite.png" alt="Ryan McHale">
-        </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logowhite.png" alt="Ryan McHale"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menuIcon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
     </div>
+  </header>
   </header>
   <main>
     <div class="container">
       <div class="title">
-      <h1>Franzetti Jewelers</h1>
-      <picture>
-        <source srcset="img/franzettics@2x.png" media="(max-width:767px)">
-        <img src="img/franzettics.png" alt="Franzetti Jewelers">
-      </picture>
-    </div>
+        <h1>Franzetti Jewelers</h1>
+        <picture>
+          <source srcset="img/franzettics@2x.png" media="(max-width:767px)">
+          <img src="img/franzettics.png" alt="Franzetti Jewelers">
+        </picture>
+      </div>
     </div>
     <div class="row divider">
   </main>
