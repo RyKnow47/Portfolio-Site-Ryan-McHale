@@ -92,6 +92,7 @@ nav>ul>li>a.active {
   padding: 10px 0;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
+
 .menuIcon:focus {
   color: ghostwhite;
 }
@@ -308,7 +309,7 @@ footer {
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-   padding: 20px 0 13px;
+    padding: 20px 0 13px;
   }
 
   nav>ul>li {
@@ -331,6 +332,11 @@ footer {
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
   }
 
   /*.logo {
@@ -433,6 +439,10 @@ footer {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
   }
 
   .logo {
