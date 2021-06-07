@@ -16,63 +16,64 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logowhite.png" alt="Ryan McHale">
-        </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logowhite.png" alt="Ryan McHale"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menuIcon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
     </div>
   </header>
-<main>
   <main>
-    <div class="container">
-      <div class="title">
-      <h1>Zenith Aviation</h1>
-      <picture>
-        <source srcset="img/zenith_cs@2x.png" media="(max-width:767px)">
-        <img src="img/zenith_cs.png" alt="Zenith Aviation">
-      </picture>
-    </div>
-    </div>
-    <div class="row divider">
-  </main>
-  <footer id="contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>
-        <a href="mailto:ryan@ryanui.com" class="button contact">Send me an Email</a>
-      <h4>ryan@ryanui.com</h4>
-      </p>
-      <div class="social">
-        <!-- ::::::::::::::::::::::::::::::::::::::::::::::SOCIAL MEDIA:::::: -->
-        <a href="https://www.linkedin.com/in/ryknowdesign/" target="_blank">
-          <img src="img/iconfinder_square-linkedin_317725.png" alt="Linkedin">
-        </a>
-        <a href="https://www.facebook.com/ryknow" target="_blank">
-          <img src="img/iconfinder_social-facebook-square2_771366.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/ryknowdesign/">
-          <img src="img/iconfinder_social_media_applications_3-instagram_4102579.png" alt="instagram">
-        </a>
-        <a href="https://www.behance.net/ryanmchale" target="_blank">
-          <img src="img/iconfinder_Behance_4745713.png" alt="Behance">
-        </a>
+    <main>
+      <div class="container">
+        <div class="title">
+          <h1>Zenith Aviation</h1>
+          <picture>
+            <source srcset="img/zenith_cs@2x.png" media="(max-width:767px)">
+            <img src="img/zenith_cs.png" alt="Zenith Aviation">
+          </picture>
+        </div>
       </div>
-    </div>
-    <div class="copyright">
-      <p>&#169; Copyright Ryan McHale 2021</P>
-    </div>
-  </footer>
-  <!-- :::::::::::::::::::::::::::::::::::::::::::::: JAVASCRIPT:::::: -->
-  <script src="js/scripts.js"></script>
+      <div class="row divider">
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>
+          <a href="mailto:ryan@ryanui.com" class="button contact">Send me an Email</a>
+        <h4>ryan@ryanui.com</h4>
+        </p>
+        <div class="social">
+          <!-- ::::::::::::::::::::::::::::::::::::::::::::::SOCIAL MEDIA:::::: -->
+          <a href="https://www.linkedin.com/in/ryknowdesign/" target="_blank">
+            <img src="img/iconfinder_square-linkedin_317725.png" alt="Linkedin">
+          </a>
+          <a href="https://www.facebook.com/ryknow" target="_blank">
+            <img src="img/iconfinder_social-facebook-square2_771366.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/ryknowdesign/">
+            <img src="img/iconfinder_social_media_applications_3-instagram_4102579.png" alt="instagram">
+          </a>
+          <a href="https://www.behance.net/ryanmchale" target="_blank">
+            <img src="img/iconfinder_Behance_4745713.png" alt="Behance">
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169; Copyright Ryan McHale 2021</P>
+      </div>
+    </footer>
+    <!-- :::::::::::::::::::::::::::::::::::::::::::::: JAVASCRIPT:::::: -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
