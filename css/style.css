@@ -17,10 +17,10 @@ body {
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
-  background-color: indianred;
+  background-color: #C64747;
   padding: 10px 0 4px;
   width: 100%;
-  border-bottom: 3px solid indianred;
+  border-bottom: 3px solid #C64747;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
@@ -71,7 +71,8 @@ nav>ul>li>a.active {
   padding: 0 0 10px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -178,36 +179,31 @@ a:active {
 /* ::::::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: indianred;
+  background-color: #C64747;
   color: ghostwhite;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border: 2px solid ghostwhite;
-  /* width of the border, type, color */
   transition: all 0.2s ease;
 }
 
 .button:hover {
   background-color: #121212;
-  color: indianred;
-  border: 2px solid indianred;
+  color: #C64747;
+  border: 2px solid #C64747;
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:visited {
-  background-color: indianred;
+  background-color: #C64747;
   color: ghostwhite;
-  border: 2px solid indianred;
+
 }
 
 .button:visited:hover {
   background-color: #121212;
-  color: indianred;
+  color: #C64747;
 }
 
 .button:active {
@@ -259,17 +255,17 @@ footer {
   background-color: transparent;
   color: ghostwhite;
   text-transform: uppercase;
-  border: 2px solid indianred;
+  border: 2px solid #C64747;
 }
 
 .button.contact:hover {
-  background-color: indianred;
+  background-color: #C64747;
   color: ghostwhite;
-  border: 2px solid indianred;
+  border: 2px solid #C64747;
 }
 
 .button.contact:active {
-  background-color: indianred;
+  background-color: #C64747;
   color: ghostwhite;
 }
 
@@ -347,11 +343,12 @@ footer {
   .logo {
     float: left;
   }
+
   .logo img {
     min-width: 150px;
   }
 
-  header div:after {
+  header div::after {
     content: "";
     clear: both;
     display: table;
@@ -458,7 +455,7 @@ footer {
     width: 150px;
   }
 
-  header div:after {
+  header div::after {
     content: "";
     clear: both;
     display: table;
@@ -539,11 +536,11 @@ footer {
 
 /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
 .button.resume {
-  background-color: indianred;
+  background-color: #C64747;
   color: ghostwhite;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid indianred;
+  border: 2px solid #C64747;
 }
 
 .story {
@@ -551,6 +548,10 @@ footer {
   padding-right: 10px;
 }
 
+.narrowrow {
+  max-width: 880px;
+  margin: 0 auto;
+}
 /*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
 .sample {
   width: 100%;
