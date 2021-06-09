@@ -11,33 +11,36 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/2a7c91b7c5.js" crossorigin="anonymous"></script>
   <!--Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWBBTQ9GMW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWBBTQ9GMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-VWBBTQ9GMW');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VWBBTQ9GMW');
+  </script>
 </head>
-
 
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logowhite.png" alt="Ryan McHale Monogram Logo">
-        </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logowhite.png" alt="Ryan McHale Monogram Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menuIcon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <main>
