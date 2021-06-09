@@ -17,10 +17,10 @@ body {
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
-  background-color: #C64747;
+  background-color: #c64747;
   padding: 10px 0 4px;
   width: 100%;
-  border-bottom: 3px solid #C64747;
+  border-bottom: 3px solid #c64747;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
@@ -79,8 +79,8 @@ nav>ul>li>a.active {
 .navtoggle li .menuIcon {
   position: absolute;
   right: 0;
-  top: 20px;
-  font-size: 20px;
+  top: 3px;
+  font-size: 35px;
   padding-right: 0;
 }
 
@@ -113,7 +113,7 @@ nav>ul>li>a.active {
 }*/
 .logo img {
   max-width: 75px;
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .logo a {
@@ -179,7 +179,7 @@ a:active {
 /* ::::::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
 .button {
   display: inline-block;
-  background-color: #C64747;
+  background-color: #c64747;
   color: ghostwhite;
   font-weight: 400;
   padding: 10px;
@@ -188,22 +188,20 @@ a:active {
 
 .button:hover {
   background-color: #121212;
-  color: #C64747;
-  border: 2px solid #C64747;
+  color: #c64747;
+  border: 2px solid #c64747;
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:visited {
-  background-color: #C64747;
+  background-color: #c64747;
   color: ghostwhite;
-
 }
 
 .button:visited:hover {
   background-color: #121212;
-  color: #C64747;
+  color: #c64747;
 }
 
 .button:active {
@@ -218,8 +216,7 @@ a:active {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right*/
-}
+  }
 
 .row::after {
   content: "";
@@ -255,17 +252,17 @@ footer {
   background-color: transparent;
   color: ghostwhite;
   text-transform: uppercase;
-  border: 2px solid #C64747;
+  border: 2px solid #c64747;
 }
 
 .button.contact:hover {
-  background-color: #C64747;
+  background-color: #c64747;
   color: ghostwhite;
-  border: 2px solid #C64747;
+  border: 2px solid #c64747;
 }
 
 .button.contact:active {
-  background-color: #C64747;
+  background-color: #c64747;
   color: ghostwhite;
 }
 
@@ -536,11 +533,11 @@ footer {
 
 /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
 .button.resume {
-  background-color: #C64747;
+  background-color: #c64747;
   color: ghostwhite;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #C64747;
+  border: 2px solid #c64747;
 }
 
 .story {
@@ -552,6 +549,7 @@ footer {
   max-width: 880px;
   margin: 0 auto;
 }
+
 /*:::::::::::::::::::::::::::::::::::: SAMPLE ANIMATION::::*/
 .sample {
   width: 100%;
