@@ -4,7 +4,7 @@
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
 body {
-  background-color: ghostwhite;
+  background-color: #fff;
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -103,13 +103,14 @@ nav>ul>li>a.active {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: ghostwhite;
+  background-color: #fff;
   color: black;
   margin: 20px 0 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
+
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: LOGO */
 /*.logo {
@@ -133,7 +134,7 @@ h1, h2, h3, h4 {
 }
 
 #hero h1 {
-  font-size:100px;
+  font-size:50px;
   font-weight: 400;
   text-align: left;
   line-height: 1.1;
@@ -172,7 +173,7 @@ margin-block-start: 1em;
 margin-block-end: 1em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
-font-size: 30px;
+font-size: 18px;
 text-align: left;
 }
 
@@ -214,7 +215,7 @@ a:active {
 }
 
 .button:hover {
-  background-color: ghostwhite;
+  background-color: #d2c7b6;
   color: #2c4e58;
   border: 2px solid #2c4e58;
   opacity: 0.8;
@@ -227,7 +228,7 @@ a:active {
 }
 
 .button:visited:hover {
-  background-color: ghostwhite;
+  background-color:#d2c7b6;
   color: #2c4e58;
 }
 
@@ -271,7 +272,7 @@ a:active {
 
 footer {
   text-align: center;
-  background-color: ghostwhite;
+  background-color: #d2c7b6;
   padding: 10px;
 }
 
@@ -284,7 +285,7 @@ footer {
 
 .button.contact:hover {
   background-color: #2c4e58;
-  color: ghostwhite;
+  color: #d2c7b6;
   border: 2px solid #2c4e58;
 }
 
@@ -333,6 +334,7 @@ footer {
     padding: 20px 0 13px;
   }
 
+
   /*@media only screen and (min-width: 641px) {
     .logo {
       max-width: 250px;
@@ -377,13 +379,22 @@ footer {
     clear: both;
     display: table;
   }
-
+  #hero h1 {
+    font-size:100px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
+  }
   #hero span {
     display: block;
   }
 
   body {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 22px;
   }
 
   .col-md-1 {
@@ -483,6 +494,13 @@ footer {
     content: "";
     clear: both;
     display: table;
+  }
+
+  #hero h1 {
+    font-size:100px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
   }
 
   #hero span {
