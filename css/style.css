@@ -32,7 +32,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: blue;
+  color: indianred;
 }
 
 nav>ul>li>a:visited {
@@ -375,7 +375,9 @@ footer {
   }
 
   .logo img {
-    min-width: 150px;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 4px 0;
   }
 
   header div::after {
