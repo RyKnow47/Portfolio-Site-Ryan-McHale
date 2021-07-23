@@ -4,33 +4,27 @@
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
 body {
-  background-color: #fff;
+  background-color: #121212;
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: black;
+  color: ghostwhite;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
-  background-color: #2c4e58;
-  padding: 10px 0 4px;
+  background-color: #121212;
+  padding: 10px 0 10px;
   width: 100%;
-  border-bottom: 3px solid #2C4E58;
- -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
- -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
- box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
- position: relative; */
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: NAVIGATION */
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding: 15px 0;
   margin: 0;
 }
 
@@ -38,30 +32,26 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: ghostwhite;
+  color: blue;
 }
 
 nav>ul>li>a:visited {
   /* visited link */
-  color: ghostwhite;
+  color: indianred;
 }
 
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
-  color: ghostwhite;
+  color: gray;
   text-decoration: none;
   /* Underlining when hovering over a link */
 }
 
 nav>ul>li>a:active {
   /* selected link */
-  color: ghostwhite;
+  color: gold;
 }
 
-nav>ul>li>a.active {
-  /* selected link */
-  color: ghostwhite;
-}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -95,7 +85,7 @@ nav>ul>li>a.active {
 }
 
 .menuIcon:focus {
-  color: #2c4e58;
+  color: ghostwhite;;
 }
 
 #hero {
@@ -103,22 +93,34 @@ nav>ul>li>a.active {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #fff;
-  color: black;
-  margin: 20px 0 20px;
+  background-color: #121212;
+  color: #00FFFF;
+  margin: 10px 0 10px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
+.heroinfo {
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #fff;
+  color: red;
+  margin: 20px 0 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 
+}
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: LOGO */
 /*.logo {
   float: left;
 }*/
 .logo img {
-  max-width: 75px;
-  margin: 2px 0;
+  max-width: 200px;
+  margin: 4px 0;
 }
 
 .logo a {
@@ -134,16 +136,18 @@ h1, h2, h3, h4 {
 }
 
 #hero h1 {
-  font-size:50px;
+  font-size: 45px;
   font-weight: 400;
   text-align: left;
   line-height: 1.1;
+  color: gold;
 }
 
 h2 {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  color: gold;
 }
 
 h3 {
@@ -351,7 +355,7 @@ footer {
     width: auto;
     float: right;
     margin-top: 4px;
-  }
+    }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -380,7 +384,7 @@ footer {
     display: table;
   }
   #hero h1 {
-    font-size:100px;
+    font-size:80px;
     font-weight: 400;
     text-align: left;
     line-height: 1.1;
@@ -497,7 +501,7 @@ footer {
   }
 
   #hero h1 {
-    font-size:100px;
+    font-size:80px;
     font-weight: 400;
     text-align: left;
     line-height: 1.1;
