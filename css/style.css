@@ -3,34 +3,29 @@
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
+
 body {
-  background-color: #121212;
-  font-family: 'Inter', sans-serif;
+  background-color: ghostwhite;
+  font-family: 'Kontrapunkt Miki', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #f0f0f2;
+  color: black;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: HEADER */
 header {
-  background-color: darkmagenta;
+  background-color: teal;
   padding: 10px 0 4px;
   width: 100%;
-  border-bottom: 3px solid darkmagenta;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.75);
-  position: relative;
+  height: auto;
+
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::: NAVIGATION */
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding: 15px 0;
   margin: 0;
 }
 
@@ -38,7 +33,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #f0f0f2;
+  color: ghostwhite;
 }
 
 nav>ul>li>a:visited {
@@ -48,19 +43,14 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
-  color: aqua;
+  color: black;
   text-decoration: none;
-  /* Underlining when hovering over a link */
+
 }
 
 nav>ul>li>a:active {
-  /* selected link */
-  color: aqua;
-}
 
-nav>ul>li>a.active {
-  /* selected link */
-  color: aqua;
+  color: gray;
 }
 
 .navtoggle li:not(:last-child) {
@@ -79,7 +69,7 @@ nav>ul>li>a.active {
 .navtoggle li .menuIcon {
   position: absolute;
   right: 0;
-  top: 3px;
+  top: 20px;
   font-size: 35px;
   padding-right: 0;
 }
@@ -91,35 +81,53 @@ nav>ul>li>a.active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 20, 147, 1);
+  border-top: 1px solid rgba(191, 255, 255, 0.8);
 }
 
 .menuIcon:focus {
   color: ghostwhite;
+
 }
+
+
 
 #hero {
-  background-color: #121212;
-  color: ghostwhite;
-  margin: 0 0 20px;
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: ghostwhite;
+  color: black;
+  margin: 10px 0 10px;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
+.heroInfo {
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: ghostwhite;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 66%;
+  padding-top: 50px;
+  text-align: left;
+}
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: LOGO */
 /*.logo {
   float: left;
 }*/
 .logo img {
-  max-width: 75px;
-  margin: 2px 0;
+  max-width: 125px;
+margin-top: 20px;
 }
 
-.logo a {
-  display: inline-block;
-  margin: 0 5px;
-}
+
 
 /* :::::::::::::::::::::::::::::::::::::::::::: TYPOGRAPHY */
 h1, h2, h3, h4 {
@@ -129,25 +137,47 @@ h1, h2, h3, h4 {
 }
 
 #hero h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.1;
+  color: teal;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 36px;
   font-weight: 700;
+  text-align: center;
+  color: black;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
 }
 
 h4 {
   font-size: 1.15em;
   font-weight: 400;
-  color: aqua;
+  color: black;
+}
+
+h5 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+  text-align: left;
 }
 
 img {
@@ -156,7 +186,7 @@ img {
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: LINKS */
 a {
-  color: ghostwhite;
+  color: black;
   text-decoration: none;
   /* No underlining */
 }
@@ -166,7 +196,7 @@ color: ghostwhite;
 } */
 a:hover,
 a:focus {
-  color: aqua;
+  color: black;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -179,7 +209,7 @@ a:active {
 /* ::::::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
 .button {
   display: inline-block;
-  background-color: darkmagenta;
+  background-color: teal;
   color: ghostwhite;
   font-weight: 400;
   padding: 10px;
@@ -187,21 +217,21 @@ a:active {
 }
 
 .button:hover {
-  background-color: #121212;
-  color: aqua;
-  border: 2px solid aqua;
+  background-color: ghostwhite;
+  color: teal;
+  border: 2px solid teal;
   opacity: 0.8;
   text-decoration: none;
 }
 
 .button:visited {
-  background-color: darkmagenta;
+  background-color: teal;
   color: ghostwhite;
 }
 
 .button:visited:hover {
-  background-color: #121212;
-  color: aqua;
+  background-color: ghostwhite;
+  color: teal;
 }
 
 .button:active {
@@ -216,7 +246,7 @@ a:active {
 
 .row {
   margin: 25px 0;
-  }
+}
 
 .row::after {
   content: "";
@@ -234,41 +264,42 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid ghostwhite;
+  border-bottom: 1px solid #2c4e58;
 }
 
 .row.divider {
   padding-bottom: 25px;
-  border-bottom: 1px solid ghostwhite;
+  border-bottom: 1px solid #2c4e58;
 }
 
 footer {
   text-align: center;
-  background-color: #121212;
+  background-color: ghostwhite;
   padding: 10px;
 }
 
 .button.contact {
-  background-color: transparent;
+  background-color: teal;
   color: ghostwhite;
   text-transform: uppercase;
-  border: 2px solid darkmagenta;
+  border: 2px solid ghostwhite;
+  margin-bottom: 10px;
 }
 
 .button.contact:hover {
-  background-color: darkmagenta;
-  color: ghostwhite;
-  border: 2px solid darkmagenta;
+  background-color: #121212;
+  color: teal;
+  border: 2px solid #121212;
 }
 
 .button.contact:active {
-  background-color: darkmagenta;
+  background-color: ghostwhite;
   color: ghostwhite;
 }
 
 .social {
   text-align: center;
-}
+  }
 
 .social a {
   display: inline-block;
@@ -281,7 +312,8 @@ footer {
 }
 
 .copyright {
-  color: aqua;
+  color: black;
+  text-align: center;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: MISC*/
@@ -301,15 +333,7 @@ footer {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE DESIGN */
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 641px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
 
-  /*@media only screen and (min-width: 641px) {
-    .logo {
-      max-width: 250px;
-    }*/
   nav>ul>li {
     display: inline-block;
   }
@@ -318,10 +342,12 @@ footer {
     margin: 1em 0;
   }
 
+
+
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 15px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -342,7 +368,10 @@ footer {
   }
 
   .logo img {
-    min-width: 150px;
+    min-width: 200px;
+    max-width: 225px;
+    margin-bottom: 15px;
+
   }
 
   header div::after {
@@ -351,12 +380,38 @@ footer {
     display: table;
   }
 
+  #hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
+  }
+
   #hero span {
     display: block;
   }
 
+  /*.heroInfo {
+    font-family: 'Kontrapunkt Miki', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: ghostwhite;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    text-align: left;
+  }*/
+
   body {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 22px;
   }
 
   .col-md-1 {
@@ -444,18 +499,27 @@ footer {
     padding: 0 0 0;
   }
 
-  .logo {
+    .logo {
     float: left;
   }
 
   .logo img {
-    width: 150px;
+    min-width: 200px;
+    max-width: 225px;
+    margin: 4px 0;
   }
 
   header div::after {
     content: "";
     clear: both;
     display: table;
+  }
+
+  #hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
   }
 
   #hero span {
@@ -530,15 +594,49 @@ footer {
 
 /* X-Large devices (1440px or larger) */
 @media only screen and (min-width: 1440px) {}
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
+
+    .logo {
+    float: left;
+  }
+
+  .logo img {
+    min-width: 200px;
+    max-width: 225px;
+    margin: 4px 0;
+  }
+
+  header div::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  #hero span {
+    display: block;
+  }
 
 /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
-/*.button.resume {
-  background-color: darkmagenta;
-  color: ghostwhite;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid darkmagenta;
-}*/
 
 .story {
   padding-left: 10px;
@@ -554,4 +652,4 @@ footer {
 /* Color: darkmagenta/ #8B008B
 Font: Aileron
 Text: FFFFFF
-Background: #121212*/
+Background: black*/
