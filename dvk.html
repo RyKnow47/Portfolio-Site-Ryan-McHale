@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWBBTQ9GMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VWBBTQ9GMW');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Ryan McHale - UI Designer Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/2a7c91b7c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/ryan-logo-04.png" alt="Ryan UI Site Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menuIcon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="title">
+        <h1>Desert Vegan Kitchen</h1>
+        <picture>
+          <source srcset="img/franzettics-2_mobile.jpg" media="(max-width:767px)">
+          <img src="img/franzettics-2.jpg" alt="Franzetti Jewelers App Case Study Image">
+        </picture>
+      </div>
+    </div>
+    <div class="row divider"></div>
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <br>
+      <a href="mailto:ryan@ryanui.com" class="button contact">Send me an Email</a>
+      <div class="social">
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::SOCIAL MEDIA:::::: -->
+        <a href="https://www.linkedin.com/in/ryanui" target="_blank">
+          <img src="img/iconfinder_square-linkedin_317725.png" alt="Linkedin">
+        </a>
+        <a href="https://www.facebook.com/ryknow" target="_blank">
+          <img src="img/iconfinder_social-facebook-square2_771366.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/ryanui_atx/">
+          <img src="img/iconfinder_social_media_applications_3-instagram_4102579.png" alt="instagram">
+        </a>
+        <a href="https://www.behance.net/ryanmchale" target="_blank">
+          <img src="img/iconfinder_Behance_4745713.png" alt="Behance">
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <h4>&#169; Copyright Ryan McHale 2021</h4>
+    </div>
+  </footer>
+  <!-- :::::::::::::::::::::::::::::::::::::::::::::: JAVASCRIPT:::::: -->
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
