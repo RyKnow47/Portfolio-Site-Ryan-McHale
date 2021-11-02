@@ -4,8 +4,8 @@
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::: BODY*/
 body {
-  background-color: ghostwhite;
-  font-family: 'Kontrapunkt Miki', sans-serif;
+  background-color: whitesmoke;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -31,7 +31,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: ghostwhite;
+  color: whitesmoke;
 }
 
 nav>ul>li>a:visited {
@@ -81,15 +81,15 @@ nav>ul>li>a:active {
 }
 
 .menuIcon:focus {
-  color: ghostwhite;
+  color: whitesmoke;
 }
 
 #hero {
-  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: black;
   margin: 10px 0 10px;
   display: inline-block;
@@ -98,11 +98,11 @@ nav>ul>li>a:active {
 }
 
 .heroInfo {
-  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: black;
   margin-left: 20px;
   margin-right: 20px;
@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
 }
 
 #hero h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
   text-align: left;
   line-height: 1.1;
@@ -201,14 +201,14 @@ a:active {
 .button {
   display: inline-block;
   background-color: teal;
-  color: ghostwhite;
+  color: whitesmoke;
   font-weight: 400;
   padding: 10px;
   transition: all 0.2s ease;
 }
 
 .button:hover {
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: teal;
   border: 2px solid teal;
   opacity: 0.8;
@@ -221,7 +221,7 @@ a:active {
 }
 
 .button:visited:hover {
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: teal;
 }
 
@@ -265,15 +265,15 @@ a:active {
 
 footer {
   text-align: center;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   padding: 10px;
 }
 
 .button.contact {
   background-color: teal;
-  color: ghostwhite;
+  color: whitesmoke;
   text-transform: uppercase;
-  border: 2px solid ghostwhite;
+  border: 2px solid whitesmoke;
   margin-bottom: 10px;
 }
 
@@ -284,8 +284,8 @@ footer {
 }
 
 .button.contact:active {
-  background-color: ghostwhite;
-  color: ghostwhite;
+  background-color: whitesmoke;
+  color: whitesmoke;
 }
 
 .social {
@@ -635,7 +635,7 @@ header div::after {
 }
 
 /* ::::::::::::::::::::::::::::::::::::: COLOR PALETTE */
-/* Color: darkmagenta/ #8B008B
+/* Color: teal/ #008080
 Font: Aileron
-Text: FFFFFF
-Background: black*/
+Text: black
+Background: whitesmoke/ #F5F5F5*/
