@@ -217,7 +217,7 @@ a:active {
 
 .button:visited {
   background-color: teal;
-  color: ghostwhite;
+  color: whitesmoke;
 }
 
 .button:visited:hover {
@@ -614,7 +614,7 @@ header div::after {
   font-size: 25px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: black;
   margin-left: 20px;
   display: inline-block;
