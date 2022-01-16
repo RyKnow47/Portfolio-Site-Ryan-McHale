@@ -104,8 +104,7 @@ nav>ul>li>a:active {
   line-height: 1.6;
   background-color: whitesmoke;
   color: black;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
   display: inline-block;
   width: 66%;
   padding-top: 50px;
@@ -565,62 +564,50 @@ footer {
 }
 
 /* X-Large devices (1440px or larger) */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
 
-.navtoggle.responsive nav {
-  padding: 0 0 0;
-}
+  .logo {
+    float: left;
+  }
 
-.logo {
-  float: left;
-}
+  .logo img {
+    min-width: 200px;
+    max-width: 225px;
+    margin: 4px 0;
+  }
 
-.logo img {
-  min-width: 200px;
-  max-width: 225px;
-  margin: 4px 0;
-}
+  header div::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-header div::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  #hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1;
+  }
 
-#hero h1 {
-  font-size: 80px;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1.1;
-}
+  #hero span {
+    display: block;
+  }
 
-#hero span {
-  display: block;
-}
 
-.heroInfo {
-  font-family: 'Kontrapunkt Miki', sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.6;
-  background-color: whitesmoke;
-  color: black;
-  margin-left: 20px;
-  display: inline-block;
-  width: 66%;
-  padding-top: 50px;
-  text-align: left;
 }
 
 /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
