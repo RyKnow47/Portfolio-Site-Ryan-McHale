@@ -35,18 +35,17 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  /* visited link */
   color: whitesmoke;
 }
 
-nav>ul>li>a:hover,
+* nav>ul>li>a:hover,
 nav>ul>li>a:focus {
   color: black;
   text-decoration: none;
 }
 
 nav>ul>li>a:active {
-  color: gray;
+  color: black;
 }
 
 .navtoggle li:not(:last-child) {
@@ -104,7 +103,6 @@ nav>ul>li>a:active {
   line-height: 1.6;
   background-color: whitesmoke;
   color: black;
-  margin-left: 10px;
   display: inline-block;
   width: 66%;
   padding-top: 50px;
@@ -178,22 +176,16 @@ img {
 a {
   color: black;
   text-decoration: none;
-  /* No underlining */
 }
 
-/*a:visited {
-color: ghostwhite;
-} */
 a:hover,
 a:focus {
   color: black;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
-  /* selected link */
-  color: aqua;
+  color: black;
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::: BUTTONS */
@@ -606,8 +598,6 @@ footer {
   #hero span {
     display: block;
   }
-
-
 }
 
 /* ::::::::::::::::::::::::::::::::::::: ABOUT SECTION */
@@ -619,6 +609,78 @@ footer {
 .narrowrow {
   max-width: 880px;
   margin: 0 auto;
+}
+
+/**************************************** FORM */
+form {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button.contact {
+  background-color: teal;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: 2px solid whitesmoke;
+  margin-bottom: 10px;
+  }
+
+.button.contact:hover {
+  background-color: #121212;
+  color: teal;
+  border: 2px solid #121212;
+}
+
+.button.contact:active {
+  background-color: whitesmoke;
+  color: whitesmoke;
 }
 
 /* ::::::::::::::::::::::::::::::::::::: COLOR PALETTE */
